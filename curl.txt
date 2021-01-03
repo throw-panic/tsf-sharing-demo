@@ -1,0 +1,33 @@
+
+
+http://localhost:4000/
+
+
+API
+
+1. ribbon
+
+	http://127.0.0.1:28080/hello02?name=rrmai
+
+
+
+2. feign
+
+	http://127.0.0.1:28080/hello02?name=rrmai
+
+
+3. zuul
+
+	http://127.0.0.1:8888/archives
+	http://127.0.0.1:8888/oschina
+	
+	(注册中心服务路由)
+	http://127.0.0.1:8888/user-service/user/get?id=1
+
+4. scg
+
+	使用浏览器，访问 http://127.0.0.1:8888	观察权重
+	
+	限流 http://127.0.0.1:8888/oschina
+
+.....
