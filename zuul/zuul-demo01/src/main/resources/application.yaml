@@ -1,0 +1,23 @@
+server: #设置网关的服务器端口。
+  port: 8888          # http://127.0.0.1:8888/archives
+                      # http://127.0.0.1:8888/oschina
+
+spring:
+  application:
+    name: zuul-application
+
+# Zuul 配置项，对应 ZuulProperties 配置类
+zuul:
+  servlet-path: / # ZuulServlet 匹配的路径，默认为 /zuul
+                  # todo: Zuul 和 SpringMVC 一样，都是通过实现自定义的 Servlet，从而进行请求的转发。
+  # 路由配置项，对应 ZuulRoute Map
+  # 其中 key 为路由编号，value 为路由具体配置：
+  # path：匹配的 URL 地址。
+  # url：转发的 URL 地址。
+  routes:
+    route_archives:
+      path: /archives/**
+      url: https://blog.yarwen.com
+    route_oschina:
+      path: /oschina/**
+      url: https://www.oschina.net

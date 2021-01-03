@@ -1,0 +1,3 @@
+com\unionpay\feign\feigndemo\consumer\feign\DemoProviderFeignClient.class
+com\unionpay\feign\feigndemo\consumer\controller\ConsumerController.class
+com\unionpay\feign\feigndemo\consumer\DemoConsumerApplication.class

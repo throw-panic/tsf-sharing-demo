@@ -1,0 +1,3 @@
+com\unionpay\sleuthFeign\springmvcdemo\controller\FeignController.class
+com\unionpay\sleuthFeign\springmvcdemo\FeignApplication.class
+com\unionpay\sleuthFeign\springmvcdemo\feign\UserServiceFeignClient.class
